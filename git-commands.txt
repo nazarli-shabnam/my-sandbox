@@ -1,0 +1,66 @@
+# Git-commands
+git config --global user.name "shabnam423"
+
+git config --global user.email sebnmenezerli13@gmail.com
+
+git config --global init.default branch main
+
+git config -h
+
+git help config
+
+cd #locationOffile
+
+git init
+
+git status
+
+git add #fileName           -the file is now being tracked
+
+git rm --cached #fileName          -the file is now NOT being tracked
+
+git add . || git -A || git --all        -to track all the files
+
+git commit -m "message"             -like taking a snapshot of all the files
+
+git diff                           - what was modified in files
+
+git restore --staged #fileName      -undos git add #fileName
+
+git commit -a -m "message"        -skipps staging step and commits directly(to the current branch)
+
+git rm "fileName"               -deletes the file
+
+git restore "fileName"              -restores deleted file
+
+git mv "prevfileName" "newfileName"     -'moves' name to new one
+
+git log                        -shows commits
+
+git log --oneline               -abbreviated version
+
+git commit -m "corrected message" --amend      -changes wrong-written message to new one
+
+git log -p                      -digs into specifics(info)
+
+git reset #code                 -moves commit to #code one.
+
+git rebase -i --root            -modify history book
+
+git branch #branchName          -new branch
+
+git branch                      -shows branches(colored one is currently active branch)
+
+git switch #branchName          
+
+git merge #branchName           -simply merges all from #branchName to main
+
+git merge -m "merge message" #branchName    -merges the changes in #branchName to main branch
+
+git branch -d #branchName       -deletes the branch
+
+git switch -c #newbranchName        -creates a branch and switches to it
+
+git fetch + git merge = git pull
+
+Reference: https://www.youtube.com/watch?v=tRZGeaHPoaw
